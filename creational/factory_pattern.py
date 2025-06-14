@@ -1,4 +1,3 @@
-# Factory Pattern
 from abc import ABC, abstractmethod
 
 
