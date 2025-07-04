@@ -23,11 +23,6 @@ class RazorPayGateway(PaymentGateway):
         print(f"Paying {amount} With RazorPayGateway")
 
 
-class GSTInvoice(Invoice):
-    def generateInvoice(self):
-        print("Generating GST Invoice")
-
-
 class PayPalGateway(PaymentGateway):
     def processPayment(self, amount):
         print(f"Paying {amount} With PayPalGateway")
@@ -36,6 +31,11 @@ class PayPalGateway(PaymentGateway):
 class StripeGateway(PaymentGateway):
     def processPayment(self, amount):
         print(f"Paying {amount} With StripeGateway")
+
+
+class GSTInvoice(Invoice):
+    def generateInvoice(self):
+        print("Generating GST Invoice")
 
 
 class USInvoice(Invoice):
